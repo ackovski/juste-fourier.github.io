@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Juste Fourier ACKO — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Juste Fourier <span class="accent">ACKO</span></h1>
+        <p class="tagline">Étudiant en cybersécurité — Gouvernance · Sécurité opérationnelle · Réseaux</p>
+      </div>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+        <a class="cv-btn" href="CV_ACKOJUSTE.pdf" target="_blank" rel="noopener">Voir CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <h2>Passionné de cybersécurité · gouvernance · sécurité opérationnelle · détection d’incidents · IAM · administration systèmes & réseaux</h2>
+        <p class="hero-sub">Actuellement en recherche de stage en cybersécurité à partir de Janvier 2026 — et je suis mobile</p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container grid">
+        <div class="card about-card">
+          <h3>À propos</h3>
+          <p>Étudiant en cybersécurité avec un profil polyvalent couvrant la gouvernance, la gestion des risques (ISO 27001, EBIOS RM), la sécurité opérationnelle, l’administration systèmes & réseaux et la détection d’incidents. Fort d’expériences en administration systèmes & réseaux, analyse data et gestion de projets IT (Orange, MSF, ANE), j’apporte une vision mêlant technique, conformité et pilotage de la sécurité.</p>
+          <p class="small">Langues : Français · Anglais (CLES B2) · Espagnol</p>
+        </div>
+        <div class="card contact-card">
+          <h3>Contact & Liens</h3>
+          <p>Email: <a href="mailto:ackojuste75@gmail.com">ackojuste75@gmail.com</a></p>
+          <p>Tél: <a href="tel:+33745300413">07 45 30 04 13</a></p>
+          <p>Localisation: Brest, France</p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/juste-fourier-acko-4a659017a/" target="_blank" rel="noopener">https://www.linkedin.com/in/juste-fourier-acko-4a659017a/</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h3 class="section-title">Compétences</h3>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h4> 🔐 Cybersécurité</h4>
+            <ul>
+              <li>ISO 27001 · EBIOS RM</li>
+              <li>IDS/IPS (Suricata) · Nessus · Nmap</li>
+              <li>Analyse réseau (Wireshark) · SOC N1/N2</li>
+              <li>IPSec · TLS · VPN</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h4> 🧬 IAM & Contrôle d'accès</h4>
+            <ul>
+              <li>AAA: Diameter · TACACS+ · LDAP</li>
+              <li>RBAC · MFA · SSO · PKI</li>
+              <li>SELinux (policies, AVC)</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h4> 🖥️ Systèmes & Réseaux</h4>
+            <ul>
+              <li>Linux (Ubuntu) · Windows Server</li>
+              <li>DHCP · DNS · VLAN · Routage</li>
+              <li>Virtualisation: VMware · VirtualBox</li>
+              <li>Docker · Kubernetes (notions) · Ansible</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h4> 📊 Data & Développement</h4>
+            <ul>
+              <li>Python · Java · MySQL</li>
+              <li>Power BI · Tableau · Excel</li>
+              <li>Automatisation & scripts · Analyse d’habilitations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h3 class="section-title">Projets & Expériences Techniques</h3>
+
+        <div class="projects-grid">
+          <article class="project">
+            <h4> 🛡️ Mise en place d’un Environnement Sécurisé de Pentest et de Détection IDS</h4>
+            <p>Laboratoire d’analyse d’intrusions basé sur Ubuntu et Docker, intégrant un attaquant Kali Linux, une cible DVWA, et un IDS Suricata configuré pour la capture et l’inspection du trafic. L’ensemble fonctionne dans un réseau Docker isolé, permettant de simuler des scénarios d’attaque, tester des règles IDS et analyser les flux réseau de manière contrôlée et reproductible.</p>
+          </article>
+
+          <article class="project">
+            <h4> 🔎 SIEM – Wazuh</h4>
+            <p>Installation du manager et des agents (Windows/Linux), intégration OpenSearch/Kibana, normalisation des événements, écriture de règles personnalisées et mise en place d’alertes IOC. Tests d’attaques simulées pour valider les détections.</p>
+          </article>
+
+          <article class="project">
+            <h4> 🔐 IAM & Contrôle d'accès</h4>
+            <p>Conception et déploiement d’une architecture AAA (FreeDiameter + LDAP) avec RBAC, PKI interne (OpenSSL), segmentation via VLAN et sécurisation des communications IPSec/TLS.</p>
+          </article>
+
+          <article class="project">
+            <h4> ⚙️ Ansible & FortiGate</h4>
+            <p>Automatisation des configurations FortiGate via l’API FortiOS et Ansible: gestion interfaces, objets réseau, politiques firewall, création de playbooks et audits de conformité automatisés.</p>
+          </article>
+
+          <article class="project">
+            <h4> 🖥️ GLPI – Administration & ITSM</h4>
+            <p>Installation complète de GLPI, configuration des entités, profils, workflows, plugins (inventory, dashboard), mise en place de SLA/OLA, automatisations et documentation opérationnelle.</p>
+          </article>
+
+          <article class="project">
+            <h4> 📊 GLPI + Zabbix</h4>
+            <p>Déploiement et intégration Zabbix pour la supervision, création de templates, association GLPI–Zabbix pour remontée d’alertes et génération automatique de tickets.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+	
+	<section id="reports" class="section">
+  <div class="container">
+    <h3 class="section-title">Documentation & Livrables</h3>
+    <ul id="report-list"></ul>
+  </div>
+</section>
+
+
+    <section id="contact" class="section footer-cta">
+      <div class="container">
+        <div class="cta-card">
+          <h3>Intéressé par mon profil ?</h3>
+          <p>Contactez-moi pour un stage ou une collaboration en cybersécurité.</p>
+          <p>Email: <a href="mailto:ackojuste75@gmail.com">ackojuste75@gmail.com</a> · Tél: <a href="tel:+33745300413">07 45 30 04 13</a></p>
+          <a class="btn-primary" href="CV_ACKOJUSTE.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 — Juste Fourier ACKO</p>
+    </div>
+  </footer>
+</body>
+</html>
